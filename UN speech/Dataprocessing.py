@@ -114,9 +114,6 @@ def preprocess_speech(speech):
     # only keep the tokens of the data
     tokens = nltk.word_tokenize(speech)
 
-    # stemming
-    # tokens = [stem_token(token) for token in tokens]
-
     # lemmatizing
     tokens = [lemmatize_token(token) for token in tokens]
 
